@@ -1,0 +1,20 @@
+﻿@model AsparagusEaterApp.DataAccess.Models.User
+@{  
+    ViewData["Title"] = "User";  
+}  
+  
+<div class="col-12">  
+    <div class="card card-primary">
+        <div class="card-body">  
+  
+            <form asp-controller="User" asp-action="Index" method="get">
+                <p class="text-primary">
+                    Name <input type="text" asp-for="UserName"/>
+                    Email <input type="text" asp-for="UserEmail"/>
+                    <input type="submit" value="Eat"/>
+                </p>
+            </form> 
+            <br />
+        </div>  
+    </div>  
+</div>  

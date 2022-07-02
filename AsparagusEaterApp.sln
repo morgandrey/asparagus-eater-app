@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsparagusEaterApp", "AsparagusEaterApp\AsparagusEaterApp.csproj", "{93FB5D47-137E-4AB4-8046-1DB84AA17E88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsparagusEaterApp.DataAccess", "AsparagusEaterApp.DataAccess\AsparagusEaterApp.DataAccess.csproj", "{D58773F2-FA08-4646-968E-9D1FF2ABC13C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{93FB5D47-137E-4AB4-8046-1DB84AA17E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93FB5D47-137E-4AB4-8046-1DB84AA17E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93FB5D47-137E-4AB4-8046-1DB84AA17E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58773F2-FA08-4646-968E-9D1FF2ABC13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58773F2-FA08-4646-968E-9D1FF2ABC13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58773F2-FA08-4646-968E-9D1FF2ABC13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58773F2-FA08-4646-968E-9D1FF2ABC13C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -36,9 +36,11 @@ public class UserController : Controller
             };
             await _userRepository.Add(user);
             await _userRepository.SaveChangesAsync();
+            _logger.LogInformation("User {UserEmail} was created", userEmail);
         }
         else
         {
+            _logger.LogInformation("User {UserEmail} was found", userEmail);
             findUserByEmail.UserEatLastDate = DateTime.Now;
             findUserByEmail.UserTimesEat++;
             _userRepository.UpdateUser(findUserByEmail);

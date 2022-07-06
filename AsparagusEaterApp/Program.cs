@@ -1,9 +1,16 @@
 using AsparagusEaterApp.DataAccess.DataAccess;
 using AsparagusEaterApp.DataAccess.Repository;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var logger = new LoggerConfiguration()
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();

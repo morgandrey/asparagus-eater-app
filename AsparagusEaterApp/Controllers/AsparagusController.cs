@@ -13,12 +13,12 @@ public class AsparagusController : Controller
         _logger = logger;
         _userRepository = userRepository;
     }
-    
-    
+
     [HttpGet]
     public async Task<IActionResult> Index()
     {
         var allUsers = await _userRepository.GetAll();
+        _logger.LogInformation("All users loaded");
         return View(allUsers);
     }
 }

@@ -10,4 +10,8 @@
       <ProjectReference Include="..\AsparagusEaterApp.DataAccess\AsparagusEaterApp.DataAccess.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+    </ItemGroup>
+
 </Project>
